@@ -25,4 +25,16 @@ public class InsertIntoBST {
 
         return root;
     }
+
+    public TreeNode insertIntoBST2(TreeNode root, int val) {
+        if (root == null)
+            return new TreeNode(val);
+
+        if (root.val > val)
+            root.left = insertIntoBST2(root.left, val);
+        else
+            root.right = insertIntoBST2(root.right, val);
+
+        return root;
+    }
 }
