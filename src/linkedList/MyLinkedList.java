@@ -1,7 +1,7 @@
 package linkedList;
 
 import nodes.ListNode;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 public class MyLinkedList {
     ListNode element;
