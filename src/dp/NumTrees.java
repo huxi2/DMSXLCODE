@@ -1,4 +1,4 @@
-package greedy;
+package dp;
 
 public class NumTrees {
 
