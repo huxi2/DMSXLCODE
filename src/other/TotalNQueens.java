@@ -1,7 +1,5 @@
 package other;
 
-import org.junit.Test;
-
 public class TotalNQueens {
     int ans = 0;
     int[][] map;
@@ -39,13 +37,5 @@ public class TotalNQueens {
             if (row - i >= 0 && col + i < map.length && map[row - i][col + i] == 1) return false;//右上
         }
         return true;
-    }
-
-    @Test
-    public void myTest(){
-//        for (int i = 0; i < 5; i++) {
-//            System.out.println(totalNQueens(i));
-//        }
-        System.out.println(totalNQueens(8));
     }
 }
